@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller Página Web</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-dark text-white text-center p-4">
+    <h1>Mi Página Web</h1>
+  </header>
+
+  <!-- Menú -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="#profundizacion">Profundización</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+        <ul class="navbar-nav ms-auto" id="userMenu">
+  <li class="nav-item"><a class="nav-link" href="login.html" id="loginLink">Login</a></li>
+</ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Carrusel -->
+    <section>
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagen 1/img1.jpg 1" class="d-block w-100" alt="imagen 1">
+          </div>
+          <div class="carousel-item">
+            <img src="/imagen 1/img2.jpg" class="d-block w-100" alt="imagen 2">
+          </div>
+          <div class="carousel-item">
+            <img src="/imagen 1/img3.jpg" class="d-block w-100" alt="imagen 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Profundización -->
+    <section id="profundizacion" class="container my-5">
+      <h2 class="text-center mb-4">Profundización en Ingeniería de Sistemas</h2>
+      <p class="text-center">
+        La Ingeniería de Sistemas ofrece múltiples áreas de especialización que permiten a los estudiantes 
+        y profesionales enfocarse en campos específicos según sus intereses y las necesidades del mercado.
+      </p>
+      <div class="row">
+        <article class="col-md-4">
+          <h4>Ciberseguridad</h4>
+          <p>Enfocada en la protección de datos, redes y sistemas frente a ataques cibernéticos, con énfasis en criptografía, seguridad ofensiva y defensiva.</p>
+        </article>
+        <article class="col-md-4">
+          <h4>Inteligencia Artificial</h4>
+          <p>Aplicación de algoritmos de aprendizaje automático y redes neuronales para resolver problemas complejos en diferentes industrias.</p>
+        </article>
+        <article class="col-md-4">
+          <h4>Desarrollo de Software</h4>
+          <p>Incluye metodologías ágiles, arquitectura de software y creación de aplicaciones móviles y web escalables y seguras.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="container my-5">
+      <h2 class="text-center mb-4">Servicios</h2>
+      <div class="row">
+        <article class="col-md-4 text-center">
+          <h3>Diseño Web</h3>
+          <p>Creación de sitios modernos y responsivos.</p>
+        </article>
+        <article class="col-md-4 text-center">
+          <h3>Desarrollo</h3>
+          <p>Aplicaciones web con tecnologías actuales.</p>
+        </article>
+        <article class="col-md-4 text-center">
+          <h3>Soporte</h3>
+          <p>Mantenimiento y optimización de sistemas.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="bg-light p-5">
+      <h2 class="text-center mb-4">Contáctanos</h2>
+      <form class="container" id="contactForm">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" id="nombre" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo</label>
+          <input type="email" id="correo" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea id="mensaje" class="form-control" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success w-100">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3 mt-4">
+    <p>&copy; 2025 - Taller Ingeniería de Sistemas</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
