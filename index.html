@@ -16,25 +16,24 @@
 
   <!-- Menú -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Inicio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-          <li class="nav-item"><a class="nav-link" href="#profundizacion">Profundización</a></li>
-          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-        </ul>
-        <ul class="navbar-nav ms-auto" id="userMenu">
-  <li class="nav-item"><a class="nav-link" href="login.html" id="loginLink">Login</a></li>
-</ul>
-
-      </div>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Inicio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#profundizacion">Profundización</a></li>
+        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+      <ul class="navbar-nav ms-auto" id="userMenu">
+        <!-- Aquí JS pondrá "Iniciar sesión" o el nombre del usuario -->
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
 
   <!-- Contenido principal -->
   <main>
@@ -43,13 +42,13 @@
       <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="imagen 1/img1.jpg 1" class="d-block w-100" alt="imagen 1">
+            <img src="imagenes/img1.jpg" class="d-block w-100" alt="imagen 1">
           </div>
           <div class="carousel-item">
-            <img src="/imagen 1/img2.jpg" class="d-block w-100" alt="imagen 2">
+            <img src="imagenes/img2.jpg" class="d-block w-100" alt="imagen 2">
           </div>
           <div class="carousel-item">
-            <img src="/imagen 1/img3.jpg" class="d-block w-100" alt="imagen 3">
+            <img src="imagenes/img3.jpg" class="d-block w-100" alt="imagen 3">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -130,6 +129,6 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
